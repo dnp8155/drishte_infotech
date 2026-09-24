@@ -1,0 +1,58 @@
+{
+  "name": "CaseStudy",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "title": "Title",
+      "description": "The title of the case study"
+    },
+    "description": {
+      "type": "string",
+      "title": "Description",
+      "description": "A detailed description of the project, challenge and outcome"
+    },
+    "client": {
+      "type": "string",
+      "title": "Client",
+      "description": "The client or business name"
+    },
+    "industry": {
+      "type": "string",
+      "title": "Industry",
+      "description": "The industry sector this case study belongs to"
+    },
+    "results": {
+      "type": "string",
+      "title": "Results",
+      "description": "Comma-separated list of measurable outcomes or metrics achieved"
+    },
+    "slug": {
+      "type": "string",
+      "title": "URL Slug",
+      "description": "URL-friendly identifier for this case study"
+    }
+  },
+  "required": [
+    "title",
+    "description"
+  ],
+  "rls": {
+    "create": {
+      "user_condition": {
+        "role": "admin"
+      }
+    },
+    "read": null,
+    "update": {
+      "user_condition": {
+        "role": "admin"
+      }
+    },
+    "delete": {
+      "user_condition": {
+        "role": "admin"
+      }
+    }
+  }
+}
