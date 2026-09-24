@@ -7,4 +7,3 @@ export default defineConfig({
     react(),
   ]
 });
-});
